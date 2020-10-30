@@ -1,0 +1,84 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 70px;
+    padding: 0 4px;
+    padding-bottom: 16px;
+    
+    
+  }
+
+  @media screen and (min-width: 550px) {
+    .row {
+      
+    
+    justify-content: space-around;
+    
+    }
+}
+    
+  .category
+  {
+      font-size: larger;
+      margin-top: 50px;
+      margin-left: 58px;
+      font-family: fantasy;
+      font-weight: bold;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 750px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 550px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .gridCake
+		{
+			grid-column-gap: 24px;
+		}
+
+		@media (min-width: 550px) {  
+        .gridCake {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+		
+		grid-column-gap: 24px;
+	
+    }
+}
+
+        @media (min-width: 750px) {
+        .gridCake {
+		grid-template-columns: 1fr 1fr 1fr 1fr ;
+		grid-column-gap: 24px;
+		
+  
+        
+        }
+}
+
+.desc{
+    padding-bottom: 32px;
+}
